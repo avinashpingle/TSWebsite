@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,22 +49,22 @@
 						type="hidden" name="id" value="${user.id}">
 					<div class="wrap-input100 validate-input m-b-23"
 						data-validate="Username is reauired">
-						<input class="input100" type="text" name="firstname" required=""
-							value="${user.firstName}"> <span class="label-input100">First
+						<input class="input100" type="text" name="firstName" required=""> 
+						<span class="label-input100">First
 							Name</span> <span class="focus-input100" data-symbol="&#xf206;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-23"
 						data-validate="Username is reauired">
-						<input class="input100" type="text" name="username"
-							value="${user.lastName}" required=""> <span
+						<input class="input100" type="text" name="lastName"
+							required=""> <span
 							class="label-input100">Last Name</span> <span
 							class="focus-input100" data-symbol="&#xf206;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-23"
 						data-validate="Username is reauired">
-						<input class="input100" type="text" name="username"
+						<input class="input100" type="text" name="phoneNumber"
 							value="${user.phoneNumber}" required=""> <span
 							class="label-input100">Phone</span> <span class="focus-input100"
 							data-symbol="&#xf095;"></span>
@@ -71,7 +72,7 @@
 
 					<div class="wrap-input100 validate-input m-b-23"
 						data-validate="Username is reauired">
-						<input class="input100" type="text" name="username"
+						<input class="input100" type="text" name="email"
 							value="${user.email}" required=""> <span
 							class="label-input100">Email</span> <span class="focus-input100"
 							data-symbol="&#xf003;"></span>
@@ -79,7 +80,7 @@
 
 					<div class="wrap-input100 validate-input m-b-23"
 						data-validate="Username is reauired">
-						<input class="input100" type="text" name="username"
+						<input class="input100" type="text" name="courseName"
 							value="${user.courseName}" required=""> <span
 							class="label-input100">Course Name</span> <span class="focus-input100"
 							data-symbol="&#xf003;"></span>
@@ -87,14 +88,14 @@
 
 					<div class="wrap-input100 validate-input m-b-23"
 						data-validate="Username is reauired">
-						<input class="input100" type="password" name="username" value="${user.password}" required="">
+						<input class="input100" type="password" name="password" value="${user.password}" required="">
 						<span class="label-input100">Password</span> <span
 							class="focus-input100" data-symbol="&#xf190;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input"
 						data-validate="Password is required">
-						<input class="input100" type="password" name="pass" required="">
+						<input class="input100" type="password" name="confirm-password" required="">
 						<span class="label-input100">Confirm Password</span> <span
 							class="focus-input100" data-symbol="&#xf087;"></span>
 					</div>
@@ -106,7 +107,7 @@
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn">Register</button>
+							<button class="login100-form-btn" type="submit">Register</button>
 						</div>
 					</div>
 

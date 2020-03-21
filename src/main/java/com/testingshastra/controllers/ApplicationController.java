@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.testingshastra.dao.UserRepo;
 import com.testingshastra.modal.User;
@@ -37,6 +38,14 @@ public class ApplicationController {
 		return "login";
 	}
 	
+	@RequestMapping("/create-user")
+	public ModelAndView createUser(User user) {
+		System.out.println("Creating user: "+user.getFirstName());
+		ModelAndView mview=new ModelAndView();
+		mview.addObject("user",user);
+		mview.setViewName("dashboard");
+		return mview;
+	}
 	
 
 }
