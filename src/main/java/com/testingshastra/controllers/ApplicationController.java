@@ -1,14 +1,18 @@
 package com.testingshastra.controllers;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.bind.BindResult;
+import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.testingshastra.dao.UserRepo;
 import com.testingshastra.modal.User;
 import com.testingshastra.services.UserService;
 
@@ -16,30 +20,23 @@ import com.testingshastra.services.UserService;
 public class ApplicationController {
 
 	@Autowired
-	private UserService userService;
+	private UserRepo userRepo;
 
-	@RequestMapping("/index")
-	public String homePage() {
+	@RequestMapping("/")
+	public String homePage(HttpServletRequest req) {
 		return "index";
 	}
 
-	@RequestMapping("/welcome")
-	public String welcome(HttpServletRequest request) {
-		request.setAttribute("mode", "MODE_HOME");
-		return "dashboard";
-	}
-
 	@RequestMapping("/register")
-	public String registration(HttpServletRequest request) {
-		request.setAttribute("mode", "MODE_REGISTER");
-		return "dashboard";
+	public String registration(User user) {
+		return "register";
 	}
-
-	@PostMapping("/save-user")
-	public String registerUser(@ModelAttribute User user, BindResult bindResult, HttpServletRequest request) {
-		System.out.println("Saving the user");
-		userService.saveUser(user);
-		return "dashboard";
+	
+	@RequestMapping("/login")
+	public String login() {
+		return "login";
 	}
+	
+	
 
 }

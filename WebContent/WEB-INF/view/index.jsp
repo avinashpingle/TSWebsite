@@ -339,7 +339,7 @@
                         <span class="location">New Sangvi, Pune</span>
                       </div>
                     </div>
-                      <a id="button" class="button" href="./pages/login.html">SignIn</a> 
+                      <a id="button" class="button" href="./pages/login.jsp">SignIn</a> 
                   </div>
                     
                 </div>

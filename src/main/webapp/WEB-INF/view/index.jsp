@@ -77,17 +77,17 @@
               padding: 0 !important;
             }
           </style>
-          <link rel='stylesheet' id='aps-animate-css-css' href='resources/static/plugins/accesspress-social-icons/css/animate.css?ver=1.7.1' type='text/css' media='all' />
-          <link rel='stylesheet' id='aps-frontend-css-css' href='resources/static/plugins/accesspress-social-icons/css/frontend.css' type='text/css' media='all' />
-          <link rel='stylesheet' id='aptf-bxslider-css' href='resources/static/plugins/accesspress-twitter-feed/css/jquery.bxslider.css?ver=1.5.8' type='text/css' media='all' />
-          <link rel='stylesheet' id='aptf-front-css-css' href='resources/static/plugins/accesspress-twitter-feed/css/frontend.css?' type='text/css' media='all' />
-          <link rel='stylesheet' id='aptf-font-css-css' href='resources/static/plugins/accesspress-twitter-feed/css/fonts.css?ver=1.5.8' type='text/css' media='all' />
-          <link rel='stylesheet' id='contact-form-7-css' href='resources/static/plugins/contact-form-7/includes/css/styles.css?ver=5.0.3' type='text/css' media='all' />
+          <link rel='stylesheet' id='aps-animate-css-css' href='../resources/static/plugins/accesspress-social-icons/css/animate.css?ver=1.7.1' type='text/css' media='all' />
+          <link rel='stylesheet' id='aps-frontend-css-css' href='../resources/static/plugins/accesspress-social-icons/css/frontend.css' type='text/css' media='all' />
+          <link rel='stylesheet' id='aptf-bxslider-css' href='../resources/static/plugins/accesspress-twitter-feed/css/jquery.bxslider.css?ver=1.5.8' type='text/css' media='all' />
+          <link rel='stylesheet' id='aptf-front-css-css' href='../resources/static/plugins/accesspress-twitter-feed/css/frontend.css?' type='text/css' media='all' />
+          <link rel='stylesheet' id='aptf-font-css-css' href='../resources/static/plugins/accesspress-twitter-feed/css/fonts.css?ver=1.5.8' type='text/css' media='all' />
+          <link rel='stylesheet' id='contact-form-7-css' href='../resources/static/plugins/contact-form-7/includes/css/styles.css?ver=5.0.3' type='text/css' media='all' />
           <link rel='stylesheet' id='ufbl-custom-select-css-css' href='resources/static/plugins/ultimate-form-builder-lite/css/jquery.selectbox.css?ver=1.3.9' type='text/css' media='all' />
           <link rel='stylesheet' id='ufbl-front-css-css' href='resources/static/plugins/ultimate-form-builder-lite/css/frontend.css?ver=1.3.9' type='text/css' media='all' />
           <link rel='stylesheet' id='enlighten-google-fonts-css' href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C600%2C700%7CRaleway%3A400%2C600%2C300%2C700%2C400italic%2C500italic%7CTitillium+Web%3A400%2C300%2C200%2C600%2C400italic%7COswald%7CLato%3A400%2C100%2C100italic%2C300%2C300italic%2C400italic%2C700%2C700italic%2C900&#038;ver=4.9.8'
             type='text/css' media='all' />
-          <link rel='stylesheet' id='enlighten-style-css' href='resources/static/style.css?ver=4.9.8' type='text/css' media='all' />
+          <link rel='stylesheet' id='enlighten-style-css' href='../resources/static/style.css?ver=4.9.8' type='text/css' media='all' />
           <style id='enlighten-style-inline-css' type='text/css'>
             .header-banner-container {
               background-image: url(https://demo.accesspressthemes.com/enlighten/wp-content/uploads/2016/05/2016-11-30-1.jpg);
@@ -339,7 +339,7 @@
                         <span class="location">New Sangvi, Pune</span>
                       </div>
                     </div>
-                      <a id="button" class="button" href="resources/static/pages/login.html">SignIn</a> 
+                      <a id="button" class="button" href="login">SignIn</a> 
                   </div>
                     
                 </div>
