@@ -42,6 +42,7 @@ public class ApplicationController {
 	public ModelAndView createUser(User user) {
 		System.out.println("Creating user: "+user.getFirstName());
 		ModelAndView mview=new ModelAndView();
+		userRepo.save(user);
 		mview.addObject("user",user);
 		mview.setViewName("dashboard");
 		return mview;
