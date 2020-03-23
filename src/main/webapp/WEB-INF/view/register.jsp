@@ -43,27 +43,27 @@
 		<div class="container-login100"
 			style="background-image: url('../resources/static/images/bg-01.jpg');">
 			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
-				<form class="login100-form validate-form" method="post"
+				<form class="login100-form validate-form" method="POST"
 					action="create-user">
 					<span class="login100-form-title p-b-36"> Register </span> <input
 						type="hidden" name="id" value="${user.id}">
-					<div class="wrap-input100 validate-input m-b-23"
-						data-validate="Username is reauired">
+					<div class="wrap-input100 validate-input m-b-00"
+						data-validate="First name is reauired">
 						<input class="input100" type="text" name="firstName" required=""> 
 						<span class="label-input100">First
 							Name</span> <span class="focus-input100" data-symbol="&#xf206;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-23"
-						data-validate="Username is reauired">
+						data-validate="Last name is reauired">
 						<input class="input100" type="text" name="lastName"
 							required=""> <span
 							class="label-input100">Last Name</span> <span
 							class="focus-input100" data-symbol="&#xf206;"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input m-b-23"
-						data-validate="Username is reauired">
+					<div class="wrap-input100 validate-input m-b-3"
+						data-validate="Phone Number is reauired">
 						<input class="input100" type="text" name="phoneNumber"
 							value="${user.phoneNumber}" required=""> <span
 							class="label-input100">Phone</span> <span class="focus-input100"
@@ -78,13 +78,20 @@
 							data-symbol="&#xf003;"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input m-b-23"
-						data-validate="Username is reauired">
-						<input class="input100" type="text" name="courseName"
-							value="${user.courseName}" required=""> <span
+					
+						<select class="input100" type="text" name="courseName"
+							value="${user.courseName}" required="">
+							<option value="1">Select Course</option>
+							<option value="1">Java-Selenium</option>
+							<option value="1">Python-Selenium</option>
+							<option value="1">Java-Full Stack</option>
+							<option value="1">Python-Full Stack</option>
+							</select>
+					<!-- 	<input class="input100" type="text" name="courseName"
+							value="${user.courseName}" required="">  
+							<span
 							class="label-input100">Course Name</span> <span class="focus-input100"
-							data-symbol="&#xf003;"></span>
-					</div>
+							data-symbol="&#xf003;"></span>-->
 
 					<div class="wrap-input100 validate-input m-b-23"
 						data-validate="Username is reauired">
@@ -95,7 +102,7 @@
 
 					<div class="wrap-input100 validate-input"
 						data-validate="Password is required">
-						<input class="input100" type="password" name="confirm-password" required="">
+						<input class="input100" type="password" required="">
 						<span class="label-input100">Confirm Password</span> <span
 							class="focus-input100" data-symbol="&#xf087;"></span>
 					</div>
@@ -111,7 +118,7 @@
 						</div>
 					</div>
 
-					<div class="txt1 text-center p-t-54 p-b-20">
+				<!-- 	<div class="txt1 text-center p-t-54 p-b-20">
 						<span> Or Sign Up Using </span>
 					</div>
 
@@ -123,7 +130,7 @@
 						</a> <a href="#" class="login100-social-item bg3"> <i
 							class="fa fa-google"></i>
 						</a>
-					</div>
+					</div> -->
 
 					<div class="flex-col-c p-t-95">
 						<span class="txt1 p-b-17"> Already have an account? Login

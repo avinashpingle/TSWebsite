@@ -3,6 +3,9 @@ package com.testingshastra.modal;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.Constraint;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.Size;
 
 @Entity
 @Table(name="Users")
@@ -11,7 +14,9 @@ public class User {
 	private int id;
 	private String firstName;
 	private String lastName;
+	@Size(min=10,max=10)
 	private String phoneNumber;
+	@Email
 	private String email;
 	private String courseName;
 	private String password;
