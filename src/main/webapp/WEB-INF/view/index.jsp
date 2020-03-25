@@ -365,7 +365,7 @@
                           <li id="menu-item-352" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-352"><a href="https://demo.accesspressthemes.com/enlighten/?s=lorem">Search Page</a></li>-->
                         </ul>
                       </li>
-                      <li id="menu-item-363" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-363"><a href="resources/static/pages/downloads.html">Downloads</a></li>
+                      <li id="menu-item-363" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-363"><a href="resources/static/pages/downloads.jsp">Downloads</a></li>
                       <li id="menu-item-252" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-252"><a href="https://www.youtube.com/channel/UCg_SUG_BAPtVUvTSKse2xBg">Videos</a></li>
                       <li id="menu-item-353" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-353"><a href="resources/static/pages/Assignments.html">Assignments</a></li>  
                       <li id="menu-item-251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-251"><a href="resources/static/pages/ContactUs.html">Contact Us</a></li>
