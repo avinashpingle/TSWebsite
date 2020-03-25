@@ -460,11 +460,11 @@
                         <div class="title_content_wrap">
                           <div class="anchor_title_wrap">
                             <span class="port_title wow fadeInUp">
-                              <a href="https://demo.accesspressthemes.com/enlighten/agiat-nulla-pariatur-except-sint-occaecat-8/">Advance Selenium</a>
+                              <a href="https://demo.accesspressthemes.com/enlighten/agiat-nulla-pariatur-except-sint-occaecat-8/">Java-Selenium</a>
                             </span>
                           </div>
                         <!--  <div class="port_content_wrap wow fadeInUp">Get hired with a 3 months of hands-on course on Java-Selenium. This course helps you to achieve all the excellence in the field of Automation Testing.</div>-->
-                        <a href='#' id='button' class="button">Enquire Now</a>
+                        <a href='#' id='button' class="button" name="course-enquiry">Enquire Now</a>
                         </div>
                       </div>
 
@@ -477,7 +477,7 @@
                             </span>
                           </div>
                         <!--  <div class="port_content_wrap wow fadeInUp">Banking Domain is a hot cake topic in today's IT industry. Learn it from Expert who is a Senior IT consultant in one ofthe Pune's giant Financial IT firm.</div>-->
-                        <a href="#" id="button" class="button">Enquire Now</a>
+                        <a href="#" id="button" class="button" name="course-enquiry">Enquire Now</a>
                         </div>
                       </div>
                       <div class="portfolio_slide_loop wow fadeInUp">
@@ -489,7 +489,7 @@
                             </span>
                           </div>
                           <!--<div class="port_content_wrap wow fadeInUp">Coming Soon..</div>-->
-                          <a href='#' id='button' class="button">Enquire Now</a>
+                          <a href='#' id='button' class="button" name="course-enquiry">Enquire Now</a>
                         </div>
                       </div>
                       <div class="portfolio_slide_loop wow fadeInUp">
@@ -501,7 +501,7 @@
                             </span>
                           </div>
                           <!--<div class="port_content_wrap wow fadeInUp">Kick start your career in programming with mother of all programming languages. Learn it in a way never before.</div>-->
-                          <a href='#' id='button' class="button">Enquire Now</a>
+                          <a href='#' id='button' class="button" name="course-enquiry">Enquire Now</a>
                         </div>
                       </div>
                       <div class="portfolio_slide_loop wow fadeInUp">
@@ -513,7 +513,7 @@
                             </span>
                           </div>
                           <!--<div class="port_content_wrap wow fadeInUp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard Devo...</div>-->
-                          <a href='#' id='button' class="button">Enquire Now</a>
+                          <a href='#' id='button' class="button" name="course-enquiry">Enquire Now</a>
                         </div>
                       </div>
                       <div class="portfolio_slide_loop wow fadeInUp">
@@ -525,7 +525,7 @@
                             </span>
                           </div>
                           <!--<div class="port_content_wrap wow fadeInUp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy...</div>-->
-                          <a href='#' id='button' class="button">Enquire Now</a>
+                          <a href='#' id='button' class="button" name="course-enquiry">Enquire Now</a>
                         </div>
                       </div>
                       <div class="portfolio_slide_loop wow fadeInUp">
@@ -537,7 +537,7 @@
                             </span>
                           </div>
                           <!--<div class="port_content_wrap wow fadeInUp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy...</div>-->
-                          <a href='#' id='button' class="button">Enquire Now</a>
+                          <a href='#' id='button' class="button" name="course-enquiry">Enquire Now</a>
                         </div>
                       </div>
                       <div class="portfolio_slide_loop wow fadeInUp">
@@ -549,7 +549,7 @@
                             </span>
                           </div>
                         <!--  <div class="port_content_wrap wow fadeInUp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy...</div>-->
-                          <a href='#' id='button' class="button">Enquire Now</a>
+                          <a href='#' id='button' class="button" name="course-enquiry">Enquire Now</a>
                         </div>
                       </div>
                     </div>
@@ -1228,7 +1228,7 @@
           <script type='text/javascript' src='https://demo.accesspressthemes.com/enlighten/wp-includes/js/wp-embed.min.js?ver=4.9.8'></script>
 
         <script type="text/javascript">
-         document.getElementById('button').addEventListener('click',function(){
+         document.getElementByName('course-enquiry').addEventListener('click',function(){
              document.querySelector('.course-info-model').style.display='flex';
          });   
         </script>
