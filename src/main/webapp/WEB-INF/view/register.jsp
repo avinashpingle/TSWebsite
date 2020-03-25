@@ -134,7 +134,7 @@
 
 					<div class="flex-col-c p-t-95">
 						<span class="txt1 p-b-17"> Already have an account? Login
-							here. </span> <a href="login.jsp" class="txt2"> Login </a>
+							here. </span> <a href="login" class="txt2"> Login </a>
 					</div>
 				</form>
 			</div>
