@@ -7,9 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.bind.BindResult;
 import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -29,18 +31,17 @@ public class ApplicationController {
 	}
 
 	@RequestMapping("/register")
-	public String registration(User user) {
+	public String registrationPage(User user) {
 		return "register";
 	}
 	
 	@RequestMapping("/login")
-	public String login() {
+	public String loginPage() {
 		return "login";
 	}
 	
 	@RequestMapping("/create-user")
 	public ModelAndView createUser(User user) {
-		System.out.println("Creating user: "+user.getFirstName());
 		ModelAndView mview=new ModelAndView();
 		userRepo.save(user);
 		mview.addObject("user",user);
@@ -48,5 +49,20 @@ public class ApplicationController {
 		return mview;
 	}
 	
+	@RequestMapping("/verifylogin")
+	public ModelAndView verifyLogin(@RequestParam String phone_email, @RequestParam String password) {
+		System.out.println("Hello");
+		ModelAndView mv=new ModelAndView("dashboard");
+		if(phone_email.equals(userRepo.findByPhoneNumber())||phone_email.equals(userRepo.findByEmail())) {
+			if(password.equals(userRepo.findByPassword())) {
+				System.out.println("Login successful");
+			}else {
+				System.out.println("Invalid credentials");
+			}
+		}else {
+			System.out.println("Invalid credentials");
+		}
+		return mv;
+	}
 
 }
