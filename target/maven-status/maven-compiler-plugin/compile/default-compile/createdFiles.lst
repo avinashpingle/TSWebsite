@@ -1,0 +1,8 @@
+com/testingshastra/TestingshastraApplication.class
+com/testingshastra/controllers/ApplicationController.class
+com/testingshastra/dao/UserRepo.class
+com/testingshastra/services/UserService.class
+com/testingshastra/controllers/RestController.class
+com/testingshastra/modal/Course.class
+com/testingshastra/repository/UserRepository.class
+com/testingshastra/modal/User.class

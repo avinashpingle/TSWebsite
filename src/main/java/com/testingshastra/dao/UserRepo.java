@@ -5,8 +5,9 @@ import org.springframework.data.repository.CrudRepository;
 import com.testingshastra.modal.User;
 
 public interface UserRepo extends CrudRepository<User, Integer> {
-	public String findByPhoneNumber();
-	public String findByEmail();
-	public String findByPassword();
+	public User findByPhoneNumber(String phoneNumber);
+	public User findByEmail(String email);
+	public User findByPassword(String password);
+	public Iterable<User> findAll();
 
 }
